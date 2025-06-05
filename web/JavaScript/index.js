@@ -1,65 +1,88 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-document.addEventListener("DOMContentLoaded", function () {
+
+    console.log("I am in onload")
     const container = document.getElementById('container');
     const registerBtn = document.getElementById('register');
     const loginBtn = document.getElementById('login');
-
-    // Додавання обробника події для кнопки реєстрації
-    registerBtn.addEventListener('click', () => {
-        container.classList.add("active");
-    });
-
-    // Додавання обробника події для кнопки входу
-    loginBtn.addEventListener('click', () => {
-        container.classList.remove("active");
-    });
+    console.log(container);
+    console.log(registerBtn);
+    console.log(loginBtn);
 
     // Обробка форми реєстрації
-    const registerForm = document.querySelector('.form-container.sign-up form');
+    const registerButton = document.getElementById('register');
+    console.log(registerButton);
 
-    registerForm.addEventListener('submit', function (event) {
+registerButton.addEventListener('click', function (event) {
         event.preventDefault(); // Запобігаємо стандартній відправці форми
+        const email = document.getElementsByClassName('email')[0]; // Отримуємо email
+        const password = document.getElementsByClassName('password')[0]; // Отримуємо пароль
+        const emailText = email.value;
+        const passwordText = password.value;
+        console.log(emailText);
+        console.log(passwordText);
+        console.log(email);
+        console.log(password);
+        if (!emailText) {
+            alert('Введіть email');
+            return;
+        }
+        if (!passwordText || passwordText.length < 8) {
+            alert('Пароль має містити не менше 8 символів');
+            return;
+        }
 
-        const name = registerForm.querySelector('input[type="text"]').value; // Отримуємо ім'я
-        const email = registerForm.querySelector('input[type="email"]').value; // Отримуємо email
-        const password = registerForm.querySelector('input[type="password"]').value; // Отримуємо пароль
+        const data = { emailText, passwordText };
 
-        // Зберігаємо дані в localStorage
-        if (name && email && password) {
-            localStorage.setItem('userName', name); // Зберігаємо ім'я
-            localStorage.setItem('userEmail', email); // Зберігаємо email
-            localStorage.setItem('userPassword', password); // Зберігаємо пароль
-            console.log('Дані збережено:', name, email, password); // Лог для перевірки
-            alert('Реєстрація успішна! Тепер ви можете увійти.'); // Повідомлення про успіх
+        fetch('http://localhost:8080/api/register', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        })
+            .then(response => {
+                if (!response.ok) {
+                    // Якщо статус 400 чи інша помилка — кидаємо її у catch
+                    return response.json().then(err => {
+                        throw new Error(err.message || 'Сталася помилка під час реєстрації');
+                    });
+                }
+                return response.json();
+            })
+            .then(result => {
+                alert('Реєстрація ' + result.isCreated);
+                console.log(result,"Логається результат");
+                if(result.isCreated){
+                    window.location.href = "../HTML/firstPage.html";
+                }
+                else{
+                    alert("Користувач з такою поштою вже є");
+                }
+            })
+            .catch(err => {
+                alert('Помилка реєстрації: ' + err.message);
+            });
+    // Зберігаємо дані в localStorage
+        if(emailText === undefined && passwordText === undefined){
+            console.log("emailText is undefined or not declared");
+            console.log("passwordText is undefined or not declared");
+            alert('Будь ласка, введіть коректні дані.');
+        } // Повідомлення про помилку}
+        else {
+            localStorage.setItem('userEmail', emailText); // Зберігаємо email
+            localStorage.setItem('userPassword', passwordText); // Зберігаємо пароль
+            console.log('Дані збережено:', emailText, passwordText); // Лог для перевірки
             container.classList.remove("active"); // Показати форму входу
-        } else {
-            alert('Будь ласка, введіть коректні дані.'); // Повідомлення про помилку
         }
     });
 
     // Обробка форми входу
     // Обробка форми входу
-    const signInForm = document.querySelector('.form-container.sign-in form');
-
-    signInForm.addEventListener('submit', function (event) {
+    const signInForm = document.getElementById("login");
+    console.log(signInForm)
+    signInForm.addEventListener('click', function (event) {
         event.preventDefault(); // Запобігаємо стандартній відправці форми
 
-        // Отримуємо значення полів вводу
-        const email = signInForm.querySelector('input[type="email"]').value.trim(); // Отримуємо email
-        const password = signInForm.querySelector('input[type="password"]').value.trim(); // Отримуємо пароль
-
-        // Отримуємо збережені дані з localStorage
-        const storedEmail = localStorage.getItem('userEmail'); // Отримуємо збережений email
-        const storedPassword = localStorage.getItem('userPassword'); // Отримуємо збережений пароль
-
-        // Перевіряємо, чи співпадають введені дані з збереженими
-        if (email === storedEmail && password === storedPassword) {
-            console.log('Дані співпадають, перенаправляємо на firstPage.html');
-            window.location.href = '../HTML/firstPage.html'; // Перенаправлення на головну сторінку
-        } else {
-            alert('Неправильне ім\'я, email або пароль.'); // Повідомлення про помилку
-        }
+            window.location.href = '../HTML/login.html'; // Перенаправлення на головну сторінку
     });
 
     // Функція для відображення даних профілю на сторінці реєстрації
@@ -79,6 +102,4 @@ document.addEventListener("DOMContentLoaded", function () {
             regEmailElement.textContent = email;
         }
     }
-});
-
 ///////
