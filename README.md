@@ -1,2 +1,3 @@
 # Smart-Planner
-It is a Smart Planner 2025
+It is an application Smart Planner
+This project was created for...
