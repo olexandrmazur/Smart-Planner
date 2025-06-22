@@ -4,6 +4,17 @@ Project ovreview:
 
 This project was created for... It offers the following functionality:
 
+
+// functions
+// about events and users
+
+
+
+
+
+
+
+
 Register user with its own name, login and password, ID will be given by system
 
 login user with its login and password
