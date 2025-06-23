@@ -3,9 +3,9 @@ It is an application Smart Planner
 Project ovreview:
 
 This project was created for... It offers the following functionality:
+Register, login, delete and edit user account
+Create, delete, view, edit events
 
-
-// functions
 // about events and users
 
 
