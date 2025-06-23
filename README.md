@@ -1,6 +1,6 @@
 # Smart-Planner
 
-![image](https://github.com/user-attachments/assets/e03cab9e-fd29-461f-8290-7d54ff23198f)
+![image](https://github.com/user-attachments/assets/666d2dba-df19-4554-a157-20ffaf91ea86)
 
 ---
 
