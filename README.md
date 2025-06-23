@@ -26,3 +26,15 @@ Create, delete, view, edit events
 - Name
 - Login
 - Password
+
+**Used Techonologies:**
+
+- Java 23
+- JDBC – for working with the database
+- HTTP Server – own implementation or use of the built-in HTTP server
+- HTML / CSS / JavaScript – front-end part
+
+**Additional libs:**
+
+- gson-2.8.9.jar it is library for working with json
+- mysql-connector-j-9.2.0.jar it is driver for connecting to the mysql database
