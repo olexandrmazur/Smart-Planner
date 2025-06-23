@@ -43,4 +43,4 @@ Create, delete, view, edit events
 
 **How to launch project on local machine:**
 
--
+- I will write it in the future when the project will be completed
