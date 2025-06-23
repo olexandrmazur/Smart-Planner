@@ -44,10 +44,10 @@ Create, delete, view, edit events
   - CSS for scaling HTML elements
   - JavaScript for creating web logic sending requests and validation of data
 
-**Additional libs:**
+- **Additional libs:**
 
-- gson-2.8.9.jar it is library for working with json
-- mysql-connector-j-9.2.0.jar it is driver for connecting to the mysql database
+  - gson-2.8.9.jar it is library for working with json
+  - mysql-connector-j-9.2.0.jar it is driver for connecting to the mysql database
 
 ---
 
