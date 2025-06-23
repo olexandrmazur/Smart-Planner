@@ -8,4 +8,6 @@ Register, login, delete and edit user account
 
 Create, delete, view, edit events
 
-// about events and users
+Events has next properties:
+
+  ID of event
