@@ -10,4 +10,4 @@ Create, delete, view, edit events
 
 Events has next properties:
 
-  ID of event
+-ID of event
