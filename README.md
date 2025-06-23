@@ -8,7 +8,8 @@ Register, login, delete and edit user account
 
 Create, delete, view, edit events
 
-Events has next properties:
+**Events** has next properties:
+
 - ID of event
 - ID of organizator
 - Title of event
@@ -18,3 +19,7 @@ Events has next properties:
 - location
 - importancy of the event
 - color that will be lighted in calendar
+
+User has next fields:
+
+- 
