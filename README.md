@@ -9,7 +9,6 @@ Register, login, delete and edit user account
 Create, delete, view, edit events
 
 Events has next properties:
-
 - ID of event
 - ID of organizator
 - Title of event
