@@ -2,31 +2,10 @@
 It is an application Smart Planner
 Project ovreview:
 
-This project was created for... It offers the following functionality:
+SmartPlanner was created to help people better manage their time, tasks, and goals in a fast-paced world. It was designed to be more than just a calendar – it is a smart assistant that helps users stay organized, reduce stress, and boost productivity. With SmartPlanner, users can easily plan their days, track their deadlines, and balance school, work, volunteering, and personal life all in one place. Its goal is to support users in building healthy habits, staying motivated, and achieving their dreams step by step. It offers the following functionality:
+
 Register, login, delete and edit user account
+
 Create, delete, view, edit events
 
 // about events and users
-
-
-
-
-
-
-
-
-Register user with its own name, login and password, ID will be given by system
-
-login user with its login and password
-
-logout from account
-
-delete account
-
-edit user account in settings menu
-
-create events they have: ID, organizator ID, title, content, date, time, location or link(if event online), list of participants, isPinned, importancy, color
-
-delete events, 
-
-edit events.
