@@ -1,6 +1,7 @@
 # Smart-Planner
 
-Project Banner
+![image](https://github.com/user-attachments/assets/b45ac8f4-e651-44b5-bd7d-99a192badac8)
+
 
 ---
 
