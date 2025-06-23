@@ -1,5 +1,7 @@
 # Smart-Planner
 
+![image](https://github.com/user-attachments/assets/e03cab9e-fd29-461f-8290-7d54ff23198f)
+
 ---
 
 **📖 Project ovreview:**
