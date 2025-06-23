@@ -35,10 +35,14 @@ Create, delete, view, edit events
 
 **🛠️ Used Techonologies:**
 
-- Java 23
-- JDBC – for working with the database
-- HTTP Server – own implementation or use of the built-in HTTP server
-- HTML / CSS / JavaScript – front-end part
+- **Backend:**
+  - Java 23
+  - JDBC – for working with the database
+  - HTTP Server – own implementation or use of the built-in HTTP server
+- **Frontend:**
+  - HTML for creating elements
+  - CSS for scaling HTML elements
+  - JavaScript for creating web logic sending requests and validation of data
 
 **Additional libs:**
 
