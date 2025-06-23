@@ -27,6 +27,8 @@ Create, delete, view, edit events
 - Login
 - Password
 
+---
+
 **🛠️ Used Techonologies:**
 
 - Java 23
