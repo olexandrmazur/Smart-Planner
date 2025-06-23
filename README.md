@@ -49,6 +49,6 @@ Create, delete, view, edit events
 - gson-2.8.9.jar it is library for working with json
 - mysql-connector-j-9.2.0.jar it is driver for connecting to the mysql database
 
-**How to launch project on local machine:**
+**🔧 How to launch project on local machine:**
 
 - I will write it in the future when the project will be completed
