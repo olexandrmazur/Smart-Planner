@@ -12,3 +12,10 @@ Events has next properties:
 
 - ID of event
 - ID of organizator
+- Title of event
+- Content
+- Date of excecution
+- Time
+- location
+- importancy of the event
+- color that will be lighted in calendar
