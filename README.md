@@ -39,6 +39,7 @@ Create, delete, view, edit events
   - Java 23
   - JDBC – for working with the database
   - HTTP Server – own implementation or use of the built-in HTTP server
+  - Telegram API - it is framework for working with telegram bots.
 - **Frontend:**
   - HTML for creating elements
   - CSS for scaling HTML elements
@@ -48,6 +49,8 @@ Create, delete, view, edit events
 
   - gson-2.8.9.jar it is library for working with json
   - mysql-connector-j-9.2.0.jar it is driver for connecting to the mysql database
+  - telegrambots it is a library for working with telegram bots
+  - Logback Classic is a library for telegrambots it is logging processes into console or .log file
 
 ---
 
