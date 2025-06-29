@@ -53,4 +53,4 @@ Create, delete, view, edit events
 
 **🔧 How to launch project on local machine:**
 
-- I will write it in the future when the project will be completed
+- You need to download folder profect or fork repositoriy and open it on your IDE(eclipse/VS code/IDEA)
