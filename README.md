@@ -54,3 +54,4 @@ Create, delete, view, edit events
 **🔧 How to launch project on local machine:**
 
 - You need to download folder profect or fork repository and open it on your IDE(eclipse/VS code/IDEA)
+- If you want to connect planner to the local database you have to change java class Database.java
