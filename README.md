@@ -31,6 +31,12 @@ Create, delete, view, edit events
 - Login
 - Password
 
+**Telegram bot has next functions:**
+
+  - menu of functions
+  - reset password
+  - change password
+
 ---
 
 **🛠️ Used Techonologies:**
